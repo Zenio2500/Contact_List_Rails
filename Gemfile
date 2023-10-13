@@ -14,6 +14,13 @@ gem "pg", "~> 1.1"
 # Use the Puma web server [https://github.com/puma/puma]
 gem "puma", ">= 5.0"
 
+# Use SCSS for stylesheet
+gem 'bootstrap-sass', '~> 3.4.1'
+gem 'sassc-rails', '>= 2.1.0'
+
+# Use jquery as JavaScript library
+gem 'jquery-rails'
+
 # Use JavaScript with ESM import maps [https://github.com/rails/importmap-rails]
 gem "importmap-rails"
 
