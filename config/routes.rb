@@ -7,8 +7,11 @@ Rails.application.routes.draw do
   root "static_pages#index"
   get "sobre" => "static_pages#sobre"
   get "contato" => "static_pages#contato"
+  get "entrar" => "sessions#new"
+  post "entrar" => "sessions#create"
+  delete "sair" => "sessions#destroy"
   resources :contacts
-  resources :users, only: [:new, :create]
+  resources :users, only: [:new, :create, :show]
   # Defines the root path route ("/")
   # root "posts#index"
 end
