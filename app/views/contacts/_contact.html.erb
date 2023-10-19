@@ -1,12 +1,14 @@
-<div id="<%= dom_id contact %>">
+<div>
+  <% @contacts.each do |c| %>
   <p>
     <strong>Name:</strong>
-    <%= contact.name %>
+    <%= c.name %>
   </p>
 
   <p>
     <strong>Phone:</strong>
-    <%= contact.phone %>
+    <%= c.phone %>
   </p>
+  <% end %>
 
 </div>
